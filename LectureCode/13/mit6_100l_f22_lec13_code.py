@@ -2,20 +2,54 @@
 # EXAMPLE: Exceptions with summing digits in a string
 ######################################
 
+# l = [2, 3, 4]
+# try:
+#     print(l[4])
+#     a
+# except IndexError:
+#     print("No such element")
+# except NameError:
+#     print("It is not an initialized element")
+#
+# def f():
+#     result = 10 / 0
+# try:
+#     d = int("this is a string")
+# except:
+#     print("It is not an integer")
+#     raise ZeroDivisionError("Division by zero")
+#
+# import traceback
+# try:
+#     # 예외가 발생할 가능성이 있는 코드
+#     f()
+# except Exception as e:
+#     # 예외 객체를 변수 e에 저장
+#     print(f"예외 발생: {type(e).__name__}")  # 예외의 종류 출력
+#     print(f"예외 메시지: {e}")  # 예외 메시지 출력
+#     tb = traceback.extract_tb(e.__traceback__)
+#     for frame in tb:
+#         print(f"파일: {frame.filename}, 라인: {frame.lineno}, 함수: {frame.name}")
+
 # Not using exceptions
 def sum_digits(s):
     """ s is a non-empty string containing digits
     Returns sum of all characters that are digits """
     total = 0
     for char in s:
-        if char in '0123456789':
-            val = int(char)
-            total += val
+        #if char in '0123456789':
+            try:
+                val = int(char)
+                total += val
+            except :
+                raise ValueError("String contained a character")
     return total
 
 # print(sum_digits("123"))
-# print(sum_digits("123abc"))
-
+try:
+    print(sum_digits("123abc"))
+except:
+    pass
 
 # Using exceptions around potentially problematic code
 # Print that an error happened and let the program keep going
@@ -51,7 +85,27 @@ def sum_digits_raise(s):
             
 # print(sum_digits_raise("123"))
 # print(sum_digits_raise("123abc"))
-
+def pairwise_div(Lnum, Ldenom):
+    """
+    Lnum and Ldenom are non-empty lists of equal lengths containing numbers
+    Returns a new list whose elements are the pairwise division of an element in Lnum by an element in Ldenom.
+    Raise a ValueError if Ldenom contains 0.
+    """
+    l = []
+    for i in range(len(Lnum)) :
+        try:
+            Result = Lnum[i]/Ldenom[i]
+            l.append(Result)
+        except:
+            raise ZeroDivisionError("Ldenom contains 0.")
+    return l
+# For example:
+# L1 = [4,5,6]
+# L2 = [1,2,3]
+# print(pairwise_div(L1, L2)) # prints [4.0,2.5,2.0]
+# L1 = [4,5,6]
+# L2 = [1,0,3]
+# print(pairwise_div(L1, L2)) # raises a ValueError
 
 # Note the assert statement activates when s is passed as ""
 def sum_digits_assert(s):
@@ -66,10 +120,54 @@ def sum_digits_assert(s):
         except:
             raise ValueError("string contained a character") 
     return total
-
+#
 # print(sum_digits_assert(""))
-# print(sum_digits_assert("123"))
+#print(sum_digits_assert("123"))
 # print(sum_digits_assert("123abc"))
+
+def pairwise_div(Lnum, Ldenom):
+    """
+    Lnum and Ldenom are non-empty lists of equal lengths
+    containing numbers
+    Returns a new list whose elements are the pairwise division of an element in Lnum by an element in Ldenom. Raise a ValueError if Ldenom contains 0.
+    """
+    assert len(Lnum) != 0 and len(Ldenom) != 0, "Ldenom contains 0."
+    l = []
+    for i in range(len(Lnum)):
+        try:
+            Result = Lnum[i] / Ldenom[i]
+            l.append(Result)
+        except:
+            raise ZeroDivisionError("Ldenom contains 0.")
+    return l
+L1 = [4,5,6]
+L2 = [1,2,3]
+print(pairwise_div(L1, L2)) # prints [4.0,2.5,2.0]
+# L1 = [4,5,6]
+# L2 = [1,0,3]
+# print(pairwise_div(L1, L2)) # raises a ValueError
+# L1 = [3,5,6]
+# L2 = []
+# print(pairwise_div(L1, L2))
+
+print(sum(L1)/len(L1))
+
+def get_stats(class_list):
+    avg = 0
+    new_stats = []
+    for elem in class_list:
+        try:
+            #assert len(elem[1]) != 0, "This list is empty"
+            new_stats.append([elem[0],elem[1],sum(elem[1])/len(elem[1])])
+        except ZeroDivisionError:
+            new_stats.append([elem[0],elem[1],0.0])
+    return new_stats
+test_grades = [[['peter', 'parker'], [10.0,55.0,85.0]], [['bruce', 'wayne'], [10.0,80.0,75.0]],
+               [['captain', 'america'], [80.0,10.0,96.0]],
+               [['deadpool'], []]]
+
+print(get_stats(test_grades))
+
 
 ######################################
 # EXAMPLE: Exceptions with user input

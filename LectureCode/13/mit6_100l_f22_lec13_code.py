@@ -1,6 +1,12 @@
 ######################################
 # EXAMPLE: Exceptions with summing digits in a string
 ######################################
+names = ['Ana', 'John', 'Matt', 'Katy']
+grades=['A+', 'B' , 'A', 'A']
+
+dict_stu = {'Ana' : 'A+', 'John' : 'B', 'Matt' : 'A', 'Katy' : 'A'}
+print(dict_stu['Matt'])
+print(grades[names.index('Matt')])
 
 # l = [2, 3, 4]
 # try:

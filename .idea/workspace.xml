@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="chapter 14 done.">
+      <change afterPath="$PROJECT_DIR$/LectureCode/15/mit6_100l_f22_lec15_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/13/mit6_100l_f22_lec13_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/13/mit6_100l_f22_lec13_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/14/mit6_100l_f22_lec14_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/14/mit6_100l_f22_lec14_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LectureCode/15" />
       <recent name="$PROJECT_DIR$/LectureCode/14" />
       <recent name="$PROJECT_DIR$/PS/PS2" />
       <recent name="$PROJECT_DIR$/LectureCode/13" />
@@ -135,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735622281033</updated>
       <workItem from="1735622282069" duration="4018000" />
-      <workItem from="1735626399220" duration="19018000" />
+      <workItem from="1735626399220" duration="19981000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -209,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735707199643</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chapter 14 done.">
+      <option name="closed" value="true" />
+      <created>1735794451733</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735794451733</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +229,8 @@
     <MESSAGE value="Added Directory, 14" />
     <MESSAGE value="Chapter 13 Done." />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="chapter 14 done." />
+    <option name="LAST_COMMIT_MESSAGE" value="chapter 14 done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="chapter 14 done.">
-      <change afterPath="$PROJECT_DIR$/LectureCode/15/mit6_100l_f22_lec15_code.py" afterDir="false" />
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Chapter 15 uploaded.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureCode/15/mit6_100l_f22_lec15_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/15/mit6_100l_f22_lec15_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
     "Python.hangman.executor": "Run",
     "Python.mit6_100l_f22_lec13_code.executor": "Run",
     "Python.mit6_100l_f22_lec14_code.executor": "Run",
+    "Python.mit6_100l_f22_lec15_code.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -135,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735622281033</updated>
       <workItem from="1735622282069" duration="4018000" />
-      <workItem from="1735626399220" duration="19981000" />
+      <workItem from="1735626399220" duration="23173000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -217,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735794451733</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Chapter 15 uploaded.">
+      <option name="closed" value="true" />
+      <created>1735795268887</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735795268887</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +239,8 @@
     <MESSAGE value="Chapter 13 Done." />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="chapter 14 done." />
-    <option name="LAST_COMMIT_MESSAGE" value="chapter 14 done." />
+    <MESSAGE value="Chapter 15 uploaded." />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 15 uploaded." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,6 +271,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec14_code.coverage" NAME="mit6_100l_f22_lec14_code Coverage Results" MODIFIED="1735794205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/14" />
     <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1735702791525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec15_code.coverage" NAME="mit6_100l_f22_lec15_code Coverage Results" MODIFIED="1735868912171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/15" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec13_code.coverage" NAME="mit6_100l_f22_lec13_code Coverage Results" MODIFIED="1735788090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/13" />
   </component>
 </project>

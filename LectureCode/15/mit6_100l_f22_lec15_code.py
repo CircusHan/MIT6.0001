@@ -1,3 +1,42 @@
+l = [2,3,4,5,6,7,8,9]
+def sum(l) :
+    s = 0
+    for i in l :
+        s+=i
+    return s
+print(sum(l))
+
+def r_sum(l) :
+    if l == [] :
+        return 0
+    else :
+        return l[0] + r_sum(l[1:])
+print(r_sum(l))
+
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        x = str(x)
+        r = self.r_palindrome(x)
+        return r
+    def r_palindrome(self, x) -> bool:
+        # is_palindrome = True
+        # for i in range(len(x) // 2):
+        #     if x[i] != x[-1 - i]:
+        #         is_palindrome = False
+        #         break
+        # return is_palindrome
+        if x == '':
+            return True
+        else :
+            if x[0] == x[-1] :
+                return self.r_palindrome(x[1:-1])
+            else :
+                return False
+S = Solution()
+print(S.isPalindrome(123))
+print(S.isPalindrome(121))
+
 ## multiplying a*b using a for loop
 
 def mult(a, b):
@@ -46,17 +85,22 @@ def mult_recur_verbose(a, b):
 ############### YOU TRY IT #################
 # Calculate n**p recursively by writing this function
 def power_recur(n, p):
-    if ____ :
-        return ____
-    elif ____ :
-        return ____
+    if p == 0 :
+        return 1
+    elif p == 1 :
+        return n
     else:
-        return ____
+        return n * power_recur(n, p-1)
 
-# print(power_recur(2,3))  # prints 8
+print(power_recur(2,3))  # prints 8
 
 ################################################
-    
+def factorial(n) :
+    if n == 0 :
+        return 1
+    else :
+        return n * factorial(n-1)
+print(factorial(5))
 ## factorial iterative
 def factorial_iter(n):
     print(f'this is fact({n})')

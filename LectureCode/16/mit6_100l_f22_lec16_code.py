@@ -1,13 +1,43 @@
 ###############
 ## Fibonacci with a dictionary 
 #################
+count = 0
 def fib_recur(n):
+    global count
+    count += 1
     if n == 1 or n == 2:
         return 1
     else:
         return fib_recur(n-1)+fib_recur(n-2)
 
 # print(fib_recur(34))
+# print(count)
+
+def dp_fib(n, d):
+    global count
+    count+=1
+    if n in d:
+        return d[n]
+    else :
+        d[n] = dp_fib(n-1, d) + dp_fib(n-2, d)
+        return d[n]
+count = 0
+d = {1 : 1, 2 : 1}
+print(dp_fib(34, d))
+for k, v in d.items():
+    print(k, v)
+print(count)
+
+
+
+
+
+
+
+
+
+
+
 
 def fib_efficient(n, d):
     if n in d:
@@ -68,24 +98,34 @@ test = [30, 40, 50]
     
 def total_len_recur(L):
     if len(L) == 1:
-        return ____
+        return len(L[0])
     else:
-        return ____
+        return len(L[0]) + total_len_recur(L[1:])
 
 test = ["ab", "c", "defgh"]
-# print(total_len_recur(test))  # should print 8
+print(total_len_recur(test))  # should print 8
 
 ##########################################
 
 ## is an element in a list?
 ## incorrect
 def in_list(L, e):
-    if len(L) == 1:
-        return L[0] == e
-    else:    
-        return in_list(L[1:], e)
+    #exist = False
+    # for e2 in L:
+    #     if e == e2:
+    #         exist = True
+    #         break
+    # return exist
+    if len(L) == 0:
+        return False
+    elif len(L) == 1:
+         return L[0] == e
+    else:
+        return L[0] == e and in_list(L[1:], e)
 
-test = [2,5,8,1]
+test = []
+print(in_list(test, 1))
+# test = [2,5,8,1]
 # print(in_list(test, 0))  # good
 
 test = [2,5,8,1]
@@ -142,16 +182,24 @@ def flatten(L):
     Returns a list containing elements that are the 
     integers in the sublists of L in the same order.
     """
-    if len(L) == 1:
+    if len(L) == 0:
+        return L
+    elif len(L) == 1:
         return L[0]
     else:
         return L[0] + flatten(L[1:])
-    
+
+print(flatten(test))
+
+
+
+
+
 test = [[1]]
-# print(flatten(test))
+print(flatten(test))
 
 test = [[1,2], [3,4], [9,8,7]]
-# print(flatten(test))
+print(flatten(test))
 
 
 ################### YOU TRY IT ##############
@@ -162,31 +210,57 @@ def in_lists_of_list(L, e):
     and False otherwise. 
     Hint, the in operator is useful here, i.e. e in something
     """
-    # your code here
+    if len(L) == 0:
+       return False
+    elif len(L) == 1 :
+       return e in L[0]
+    else:
+       return e in L[0] or in_lists_of_list(L[1:], e)
+
 
     
 
 test = [[1,2], [3,4], [5,6,7]]
-# print(in_lists_of_list(test, 3))  # prints True
+print(in_lists_of_list(test, 3))  # prints True
 
 test = [[1,2], [3,4], [5,6,7]]
-# print(in_lists_of_list(test, 0))  # prints False
+print(in_lists_of_list(test, 0))  # prints False
 
 ###############################################
 
-
-## reverse a list's elements
-def my_rev(L):
-    if len(L) == 1:
-        return L
+def reverse(l) :
+    if len(l) == 0 :
+        return []
+    elif len(l) == 1 :
+        return l
     else:
-        return my_rev(L[1:]) + [L[0]]
-    
-# test = [1, 2, "abc"]
-# print(my_rev(test))
+        return (reverse(l[1:]) + [l[0]])
+test = [1,2,3,4,5]
+print(reverse(test))
+## reverse a list's elements
+# def my_rev(L):
+#     if len(L) == 1:
+#         return L
+#     else:
+#         return my_rev(L[1:]) + [L[0]]
+def deep_rev(L) :
+    if len(L) == 0 :
+        return []
+    elif len(L) == 1 :
+        if type(L[0]) == list :
+            return reverse(L[0])
+        else:
+            return L
+    else :
+        if type(L[0]) == list :
+            return deep_rev(L[1:]) + deep_rev(L[0])
+        else :
+            return (deep_rev(L[1:]) + [L[0]])
+test = [1, 2, "abc"]
+print(deep_rev(test))
 
-# test = ["abc", ['d'], ['e', ['f', 'g']]]
-# print(my_rev(test))
+test = ["abc", ['d'], ['e', ['f', 'g']]]
+print(deep_rev(test))
 
 ## reverse a list's elements (and its list elems, etc, recursively)
 def deep_rev(L):
@@ -397,7 +471,7 @@ def score_count(x, d):
 # print(score_count(6, d))  # prints 20
 # print(score_count(13, d))  # prints 1431
 
-# Q2
+# Q2 is list of mod(L,e)
 def in_list_of_lists_mod(L, e):
     """
     L is a list whose elements are either
@@ -422,12 +496,12 @@ def in_list_of_lists_mod(L, e):
             return in_list_of_lists_mod(L[1:], e)
 
 
-# test = [[1,2],3,4,5,6,7]
-# print(in_list_of_lists_mod(test, 3))  # prints True
-# test = [[1,2],[3,4,5],6,7]
-# print(in_list_of_lists_mod(test, 3))  # prints True
-# test = [[1,2],[3,4,5],6,7]
-# print(in_list_of_lists_mod(test, 10))  # prints False
+test = [[1,2],3,4,5,6,7]
+print(in_list_of_lists_mod(test, 3))  # prints True
+test = [[1,2],[3,4,5],6,7]
+print(in_list_of_lists_mod(test, 3))  # prints True
+test = [[1,2],[3,4,5],6,7]
+print(in_list_of_lists_mod(test, 10))  # prints False
 
 # Q3
 def my_deepcopy(L):
@@ -437,21 +511,38 @@ def my_deepcopy(L):
     Returns a new list with the same structure as L that 
     contains copies (recursively) of every sublist 
     """
-    pass
-    if len(L) == 0:
-        return []
-    elif type(L[0]) != list:
-        return [L[0]] + my_deepcopy(L[1:])
+    if len(L)==0:
+        return L
     else:
-        return [my_deepcopy(L[0])] + my_deepcopy(L[1:])
+        if type(L[0])==list:
+            return [my_deepcopy(L[0])] + my_deepcopy(L[1:])
+        else:
+            return [L[0]] + my_deepcopy(L[1:])
 
-# myL = ["abc", ['d'], ['e', ['f', 'g']]]
-# my_newL = my_deepcopy(myL)
-# print(myL)
-# print(my_newL)
-# myL[2][1][0] = 1
-# print(myL)      # should be ['abc', ['d'], ['e', [1, 'g']]]
-# print(my_newL)  # should be ['abc', ['d'], ['e', ['f', 'g']]]
+
+
+myL = ["abc", ['d'], ['e', ['f', 'g']]]
+my_newL = my_deepcopy(myL)
+print(myL)
+print(my_newL)
+myL[2][1][0] = 1
+print(myL)      # should be ['abc', ['d'], ['e', [1, 'g']]]
+print(my_newL)  # should be ['abc', ['d'], ['e', ['f', 'g']]]
+
+
+
+
+
+
+
+    # pass
+    # if len(L) == 0:
+    #     return []
+    # elif type(L[0]) != list:
+    #     return [L[0]] + my_deepcopy(L[1:])
+    # else:
+    #     return [my_deepcopy(L[0])] + my_deepcopy(L[1:])
+
 
 # Q4
 def f(L):
@@ -465,7 +556,7 @@ def f(L):
         else:
             return f(L[1:])
         
-# print(f(['z', 'a', 'b', 'c', 'd']))  # should print 'a'
+print(f(['z', 'a', 'b', 'c', 'd']))  # should print 'a'
 
 
 def g(L, e):
@@ -484,8 +575,8 @@ def g(L, e):
         else:
             return g(L[1:], e)
     
-# print(g([1,2,3,1], 1))     # should print 2
-# print(g([1,1,2,3,1,1], 1)) # should print 4
+print(g([1,2,3,1], 1))     # should print 2
+print(g([1,1,2,3,1,1], 1)) # should print 4
     
 
 def h(L, e):
@@ -493,19 +584,50 @@ def h(L, e):
     Returns a count of how many times e occurrs in L or 
     (recursively) any sublist of L
     """
+
     if len(L) == 0:
         return 0
-    else:
+    elif len(L) == 1:
         if type(L[0])==int:
             if L[0] == e:
-                return 1+h(L[1:], e)
+                return 1
             else:
-                return h(L[1:], e)
-        elif type(L[0])== list:
-            if e in L[0]:
-                return h(L[0], e)+h(L[1:], e)
-            else:
-                return h(L[1:], e)
-    
+                return 0
+    else :
+        if type(L[0]) == int :
+            return int(L[0] == e)+h(L[1:], e)
+        else :
+            return h(L[0], e) + h(L[1:], e)
+
+print(h([1,2,[3],1], 1))        # should print 2
+print(h([1,2,[3,1,[1,[1]]]], 1))  # should print 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # if len(L) == 0:
+    #     return 0
+    # else:
+    #     if type(L[0])==int:
+    #         if L[0] == e:
+    #             return 1+h(L[1:], e)
+    #         else:
+    #             return h(L[1:], e)
+    #     elif type(L[0])== list:
+    #         if e in L[0]:
+    #             return h(L[0], e)+h(L[1:], e)
+    #         else:
+    #             return h(L[1:], e)
+    #
 # print(h([1,2,[3],1], 1))        # should print 2
 # print(h([1,2,[3,1,[1,[1]]]], 1))  # should print 4

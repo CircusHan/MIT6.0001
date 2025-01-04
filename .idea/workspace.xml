@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Chapter 15 done.Chapter 16 uploaded">
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="챕터16 Done">
+      <change afterPath="$PROJECT_DIR$/LectureCode/17/mit6_100l_f22_lec17_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/16/mit6_100l_f22_lec16_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/16/mit6_100l_f22_lec16_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
     "Python.mit6_100l_f22_lec14_code.executor": "Run",
     "Python.mit6_100l_f22_lec15_code.executor": "Run",
     "Python.mit6_100l_f22_lec16_code.executor": "Run",
+    "Python.mit6_100l_f22_lec17_code.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -60,14 +61,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LectureCode/17" />
       <recent name="$PROJECT_DIR$/LectureCode/16" />
       <recent name="$PROJECT_DIR$/LectureCode/15" />
       <recent name="$PROJECT_DIR$/LectureCode/14" />
       <recent name="$PROJECT_DIR$/PS/PS2" />
-      <recent name="$PROJECT_DIR$/LectureCode/13" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mit6_100l_f22_lec16_code">
+  <component name="RunManager">
     <configuration name="hangman" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MIT6.0001" />
       <option name="ENV_FILES" value="" />
@@ -162,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735622281033</updated>
       <workItem from="1735622282069" duration="4018000" />
-      <workItem from="1735626399220" duration="27757000" />
+      <workItem from="1735626399220" duration="34182000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -260,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735869329706</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="챕터16 Done">
+      <option name="closed" value="true" />
+      <created>1735873872283</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735873872283</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +284,8 @@
     <MESSAGE value="chapter 14 done." />
     <MESSAGE value="Chapter 15 uploaded." />
     <MESSAGE value="Chapter 15 done.Chapter 16 uploaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 15 done.Chapter 16 uploaded" />
+    <MESSAGE value="챕터16 Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="챕터16 Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -305,10 +315,16 @@
           <line>524</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/17/mit6_100l_f22_lec17_code.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec17_code.coverage" NAME="mit6_100l_f22_lec17_code Coverage Results" MODIFIED="1735961645625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/17" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec14_code.coverage" NAME="mit6_100l_f22_lec14_code Coverage Results" MODIFIED="1735794205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/14" />
     <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1735702791525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec15_code.coverage" NAME="mit6_100l_f22_lec15_code Coverage Results" MODIFIED="1735868912171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/15" />

@@ -51,17 +51,16 @@ def get_frequencies(input_iterable):
         dictionary that maps string:int where each string
         is a letter or word in input_iterable and the corresponding int
         is the frequency of the letter or word in input_iterable
-    Note: 
+    Note:
         You can assume that the only kinds of white space in the text documents we provide will be new lines or space(s) between words (i.e. there are no tabs)
     """
     d = {}
-    for word in input_iterable:
-        if word not in d :
+    for word in input_iterable :
+        if word in d:
+            d[word] += 1
+        else:
             d[word] = 1
-        else :
-            d[word]  += 1
     return d
-
 
 
 ### Problem 2: Letter Frequencies ###
@@ -74,15 +73,6 @@ def get_letter_frequencies(word):
         is a letter in word and the corresponding int
         is the frequency of the letter in word
     """
-    d = {}
-    letter_list = [char for char in word]
-    return get_frequencies(letter_list)
-    # for letter in word :
-    #     if letter not in d:
-    #         d[letter] = 1
-    #     else :
-    #         d[letter] += 1
-    # return d
 
 
 
@@ -111,26 +101,7 @@ def calculate_similarity_score(freq_dict1, freq_dict2):
          all frequencies in both dict1 and dict2.
         Return 1-(DIFF/ALL) rounded to 2 decimal places
     """
-    unioned_set = set(freq_dict1.keys()) | set(freq_dict2.keys())
-    top = 0
-    bottom = 0
-    for word in unioned_set :
-        if word in freq_dict1:
-            dict1_freq = freq_dict1[word]
-        else :
-            dict1_freq = 0
-        if word in freq_dict2:
-            dict2_freq = freq_dict2[word]
-        else:
-            dict2_freq = 0
-
-        delta = abs(dict1_freq - dict2_freq)
-        sigma = dict1_freq + dict2_freq
-        top += delta
-        bottom += sigma
-
-    return round((1- top/bottom), 2)
-
+    pass
 
 
 ### Problem 4: Most Frequent Word(s) ###
@@ -154,43 +125,10 @@ def get_most_frequent_words(freq_dict1, freq_dict2):
     If multiple words are tied (i.e. share the same highest frequency),
     return an alphabetically ordered list of all these words.
     """
-    unioned_dict = {}
-    unioned_set = set(freq_dict1.keys()) | set(freq_dict2.keys())
-    for word in unioned_set :
-        if word in freq_dict1 :
-            dict1_freq = freq_dict1[word]
-        else:
-            dict1_freq = 0
-        if word in freq_dict2 :
-            dict2_freq = freq_dict2[word]
-        else:
-            dict2_freq = 0
-        unioned_dict[word] = dict1_freq + dict2_freq
-    max_freq = max(unioned_dict.values())
-    # for word in unioned_dict.keys():
-    #     if unioned_dict[word] > max_freq:
-    #         max_freq = unioned_dict[word]
-
-    max_freq_words = [word for word, freq in sorted(unioned_dict.items()) if freq == max_freq]
-    # l = []
-    # for  word, freq in unioned_dict.items():
-    #     if freq == max_freq:
-    #         l.append(word)
-    # l.sort()
-    return max_freq_words
-
-
-
-
+    pass
 
 
 ### Problem 5: Finding TF-IDF ###
-def get_freq_dict(file_path) :
-    loaded_string = load_file(file_path)
-    wordlist = text_to_list(loaded_string)
-    word_frequencies = get_frequencies(wordlist)
-    return word_frequencies
-
 def get_tf(file_path):
     """
     Args:
@@ -202,16 +140,7 @@ def get_tf(file_path):
         in the document) / (total number of words in the document)
     * Think about how we can use get_frequencies from earlier
     """
-
-    word_frequencies = get_freq_dict(file_path)
-    tf_d = {}
-    total_frequency = sum(word_frequencies.values())
-    for word, word_freq in word_frequencies.items():
-        tf_d[word] = word_freq / total_frequency
-    return tf_d
-
-
-
+    pass
 
 def get_idf(file_paths):
     """
@@ -225,26 +154,7 @@ def get_idf(file_paths):
     with math.log10()
 
     """
-    total_num_documents = len(file_paths)
-
-    # create a dictionary, word_dict, where a key is a word and its value is the number of documents with the word.
-    word_dict = {}
-    for file_path in file_paths:
-        word_frequencies = get_freq_dict(file_path)
-        for word in word_frequencies.keys():
-            if word in word_dict:
-                word_dict[word] += 1
-            else :
-                word_dict[word] = 1
-
-    # create another dictionary, idf_d, where key is a word and its value is idf.
-    idf_d = {}
-    for word, freq in word_dict.items():
-        idf_d[word] = math.log10(total_num_documents / freq)
-    return idf_d
-
-
-
+    pass
 
 def get_tfidf(tf_file_path, idf_file_paths):
     """
@@ -259,18 +169,7 @@ def get_tfidf(tf_file_path, idf_file_paths):
 
         * TF-IDF(i) = TF(i) * IDF(i)
         """
-    # create a tf dictionary, tf_d.
-    tf_d = get_tf(tf_file_path)
-    # create a idf dictionary, idf_d.
-    idf_d = get_idf(idf_file_paths)
-    print("hey")
-    print(idf_d)
-    # create a dictionary, where key is a word in tf_d, and its value is tf-idf value.
-    # tf 내에서 loop을 돌기 때문에 tf value은 [words]로 쓸 필요가 없다.
-    tf_idf_d = {}
-    for word, tf in tf_d.items():
-        tf_idf_d[word] = tf * idf_d[word]
-    return tf_idf_d
+    pass
 
 
 if __name__ == "__main__":
@@ -279,57 +178,57 @@ if __name__ == "__main__":
     ## Uncomment the following lines to test your implementation ##
     ###############################################################
 
-    # Tests Problem 0: Prep Data
-    test_directory = "tests/student_tests/"
-    hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
-    world, friend = text_to_list(hello_world), text_to_list(hello_friend)
-    print(world)      # should print ['hello', 'world', 'hello']
-    print(friend)     # should print ['hello', 'friends']
+    ## Tests Problem 0: Prep Data
+    # test_directory = "tests/student_tests/"
+    # hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
+    # world, friend = text_to_list(hello_world), text_to_list(hello_friend)
+    # print(world)      # should print ['hello', 'world', 'hello']
+    # print(friend)     # should print ['hello', 'friends']
 
-    # Tests Problem 1: Get Frequencies
-    test_directory = "tests/student_tests/"
-    hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
-    world, friend = text_to_list(hello_world), text_to_list(hello_friend)
-    world_word_freq = get_frequencies(world)
-    friend_word_freq = get_frequencies(friend)
-    print(world_word_freq)    # should print {'hello': 2, 'world': 1}
-    print(friend_word_freq)   # should print {'hello': 1, 'friends': 1}
+    ## Tests Problem 1: Get Frequencies
+    # test_directory = "tests/student_tests/"
+    # hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
+    # world, friend = text_to_list(hello_world), text_to_list(hello_friend)
+    # world_word_freq = get_frequencies(world)
+    # friend_word_freq = get_frequencies(friend)
+    # print(world_word_freq)    # should print {'hello': 2, 'world': 1}
+    # print(friend_word_freq)   # should print {'hello': 1, 'friends': 1}
 
-    # Tests Problem 2: Get Letter Frequencies
-    freq1 = get_letter_frequencies('hello')
-    freq2 = get_letter_frequencies('that')
-    print(freq1)      #  should print {'h': 1, 'e': 1, 'l': 2, 'o': 1}
-    print(freq2)      #  should print {'t': 2, 'h': 1, 'a': 1}
+    ## Tests Problem 2: Get Letter Frequencies
+    # freq1 = get_letter_frequencies('hello')
+    # freq2 = get_letter_frequencies('that')
+    # print(freq1)      #  should print {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+    # print(freq2)      #  should print {'t': 2, 'h': 1, 'a': 1}
 
-    # Tests Problem 3: Similarity
-    test_directory = "tests/student_tests/"
-    hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
-    world, friend = text_to_list(hello_world), text_to_list(hello_friend)
-    world_word_freq = get_frequencies(world)
-    friend_word_freq = get_frequencies(friend)
-    word1_freq = get_letter_frequencies('toes')
-    word2_freq = get_letter_frequencies('that')
-    word3_freq = get_frequencies('nah')
-    word_similarity1 = calculate_similarity_score(word1_freq, word1_freq)
-    word_similarity2 = calculate_similarity_score(word1_freq, word2_freq)
-    word_similarity3 = calculate_similarity_score(word1_freq, word3_freq)
-    word_similarity4 = calculate_similarity_score(world_word_freq, friend_word_freq)
-    print(word_similarity1)       # should print 1.0
-    print(word_similarity2)       # should print 0.25
-    print(word_similarity3)       # should print 0.0
-    print(word_similarity4)       # should print 0.4
+    ## Tests Problem 3: Similarity
+    # test_directory = "tests/student_tests/"
+    # hello_world, hello_friend = load_file(test_directory + 'hello_world.txt'), load_file(test_directory + 'hello_friends.txt')
+    # world, friend = text_to_list(hello_world), text_to_list(hello_friend)
+    # world_word_freq = get_frequencies(world)
+    # friend_word_freq = get_frequencies(friend)
+    # word1_freq = get_letter_frequencies('toes')
+    # word2_freq = get_letter_frequencies('that')
+    # word3_freq = get_frequencies('nah')
+    # word_similarity1 = calculate_similarity_score(word1_freq, word1_freq)
+    # word_similarity2 = calculate_similarity_score(word1_freq, word2_freq)
+    # word_similarity3 = calculate_similarity_score(word1_freq, word3_freq)
+    # word_similarity4 = calculate_similarity_score(world_word_freq, friend_word_freq)
+    # print(word_similarity1)       # should print 1.0
+    # print(word_similarity2)       # should print 0.25
+    # print(word_similarity3)       # should print 0.0
+    # print(word_similarity4)       # should print 0.4
 
-    # Tests Problem 4: Most Frequent Word(s)
-    freq_dict1, freq_dict2 = {"hello": 5, "world": 1}, {"hello": 1, "world": 5}
-    most_frequent = get_most_frequent_words(freq_dict1, freq_dict2)
-    print(most_frequent)      # should print ["hello", "world"]
+    ## Tests Problem 4: Most Frequent Word(s)
+    # freq_dict1, freq_dict2 = {"hello": 5, "world": 1}, {"hello": 1, "world": 5}
+    # most_frequent = get_most_frequent_words(freq_dict1, freq_dict2)
+    # print(most_frequent)      # should print ["hello", "world"]
 
     ## Tests Problem 5: Find TF-IDF
-    tf_text_file = 'tests/student_tests/hello_world.txt'
-    idf_text_files = ['tests/student_tests/hello_world.txt', 'tests/student_tests/hello_friends.txt']
+    # tf_text_file = 'tests/student_tests/hello_world.txt'
+    # idf_text_files = ['tests/student_tests/hello_world.txt', 'tests/student_tests/hello_friends.txt']
     # tf = get_tf(tf_text_file)
     # idf = get_idf(idf_text_files)
-    tf_idf = get_tfidf(tf_text_file, idf_text_files)
+    # tf_idf = get_tfidf(tf_text_file, idf_text_files)
     # print(tf)     # should print {'hello': 0.6666666666666666, 'world': 0.3333333333333333}
     # print(idf)    # should print {'hello': 0.0, 'world': 0.3010299956639812, 'friends': 0.3010299956639812}
-    print(tf_idf) # should print [('hello', 0.0), ('world', 0.10034333188799373)]
+    # print(tf_idf) # should print [('hello', 0.0), ('world', 0.10034333188799373)]

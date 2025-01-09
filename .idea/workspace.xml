@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="챕터17 Done">
-      <change afterPath="$PROJECT_DIR$/LectureCode/18/mit6_100l_f22_lec18_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS3/document_distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS3/test_ps3_student.py" afterDir="false" />
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="PS 3 Done.">
+      <change afterPath="$PROJECT_DIR$/LectureCode/19/mit6_100l_f22_lec19_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS/PS3/document_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/PS/PS3/document_distance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     "Python.mit6_100l_f22_lec16_code.executor": "Run",
     "Python.mit6_100l_f22_lec17_code.executor": "Run",
     "Python.mit6_100l_f22_lec18_code.executor": "Run",
+    "Python.mit6_100l_f22_lec19_code.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -62,6 +62,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,11 +71,11 @@
       <recent name="$PROJECT_DIR$/PS/PS3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LectureCode/19" />
       <recent name="$PROJECT_DIR$/PS/PS3" />
       <recent name="$PROJECT_DIR$/LectureCode/18" />
       <recent name="$PROJECT_DIR$/LectureCode/17" />
       <recent name="$PROJECT_DIR$/LectureCode/16" />
-      <recent name="$PROJECT_DIR$/LectureCode/15" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +174,7 @@
       <updated>1735622281033</updated>
       <workItem from="1735622282069" duration="4018000" />
       <workItem from="1735626399220" duration="35476000" />
-      <workItem from="1736123777943" duration="16106000" />
+      <workItem from="1736123777943" duration="25900000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -287,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735963024599</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="PS 3 Done.">
+      <option name="closed" value="true" />
+      <created>1736223869410</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736223869410</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +313,8 @@
     <MESSAGE value="Chapter 15 done.Chapter 16 uploaded" />
     <MESSAGE value="챕터16 Done" />
     <MESSAGE value="챕터17 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="챕터17 Done" />
+    <MESSAGE value="PS 3 Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="PS 3 Done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,11 +350,6 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PS/PS3/document_distance.py</url>
-          <line>329</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/PS/PS3/test_ps3_student.py</url>
           <line>408</line>
           <option name="timeStamp" value="21" />
@@ -360,6 +365,7 @@
     <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1736125372266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec13_code.coverage" NAME="mit6_100l_f22_lec13_code Coverage Results" MODIFIED="1735788090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/13" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec16_code.coverage" NAME="mit6_100l_f22_lec16_code Coverage Results" MODIFIED="1735873844717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/16" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec19_code.coverage" NAME="mit6_100l_f22_lec19_code Coverage Results" MODIFIED="1736308294700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/19" />
     <SUITE FILE_PATH="coverage/MIT6_0001$document_distance.coverage" NAME="document_distance Coverage Results" MODIFIED="1736223286953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS3" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec18_code.coverage" NAME="mit6_100l_f22_lec18_code Coverage Results" MODIFIED="1736127686799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/18" />
   </component>

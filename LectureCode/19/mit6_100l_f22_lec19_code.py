@@ -360,6 +360,37 @@ def make_pets(d):
 #       #        james:fluffsphere
 
 
+
+
+class Animal() :
+    animals = []
+    __current_id = 0
+    def __init__(self, age):
+        self.id = Animal.__current_id
+        Animal.__current_id += 1
+        self.age = age
+        self.name = None
+        Animal.animals.append(self)
+    def __str__(self):
+        return "animal:"+str(self.id)+":"+str(self.age)
+
+class Cat(Animal):
+    def __init__(self, name, age, color):
+        Animal.__init__(self, age)
+        self.name = name
+        self.color = color
+    def __str__(self):
+        return f"cat:{self.id}:{self.name}:{self.color}:{self.age}"
+    def __eq__(self, other):
+        return self.id == other.id
+a = Animal(16)
+c = Animal(12)
+Animal.__current_id = 0
+b = Cat("Luv", 2, "blue")
+print(a == b)
+print(a)
+print(b)
+
 ##################################################
 ######### AT HOME ###############
 ##################################################

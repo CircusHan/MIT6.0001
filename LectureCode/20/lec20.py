@@ -264,7 +264,14 @@ class RunWorkout(Workout):
 
     def __eq__(self,other):
         """Returns true if this workout is equal to another workout, false o.w."""
-        return super().__eq__(other) and self.elev == other.elev
+        #return super.__eq__(other) and self.elev == other.elev
+        # print(id(self))
+        # a = super()
+        # print(f"super: {id(a)}")
+        # print(id(a.__self__))
+        # print(type(a))
+        # return False
+
 
 
 # =============================================================================
@@ -274,8 +281,8 @@ print(RunWorkout.__dict__.keys()) # dict_keys(['__module__', 'cals_per_km', '__i
 print()
 workout1 = RunWorkout('9/30/2021 1:35 PM','9/30/2021 1:57 PM', calories=450, elev=200)
 print(workout1.__dict__.keys())   # dict_keys(['start', 'end', 'icon', 'kind', 'calories', 'elev', 'route_gps_points'])
-
-
+workout2 = RunWorkout('9/30/2021 1:35 PM','9/30/2021 1:57 PM', calories=450, elev=200)
+print(workout1 == workout2)
 # =============================================================================
 # EXAMPLE: Subclass of workout to represent a swimming workout
 # =============================================================================

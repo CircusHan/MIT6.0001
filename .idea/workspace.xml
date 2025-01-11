@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Lecture 19 Done.">
-      <change afterPath="$PROJECT_DIR$/LectureCode/20/lec20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LectureCode/20/lec20_helpers.py" afterDir="false" />
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Lecture 20 Done.">
+      <change afterPath="$PROJECT_DIR$/LectureCode/21/mit6_100l_f22_lec21_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/19/mit6_100l_f22_lec19_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/19/mit6_100l_f22_lec19_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureCode/20/lec20.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/20/lec20.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,44 +48,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_ps3_student.py.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.document_distance.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.hangman.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lec20.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lec20_helpers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec13_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec14_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec15_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec16_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec17_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec18_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mit6_100l_f22_lec19_code.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/smcrony/PycharmProjects/MIT6.0001/PS/PS3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_ps3_student.py.executor": "Debug",
+    "Python.Test.executor": "Run",
+    "Python.document_distance.executor": "Debug",
+    "Python.hangman.executor": "Run",
+    "Python.lec20.executor": "Run",
+    "Python.lec20_helpers.executor": "Run",
+    "Python.mit6_100l_f22_lec13_code.executor": "Run",
+    "Python.mit6_100l_f22_lec14_code.executor": "Run",
+    "Python.mit6_100l_f22_lec15_code.executor": "Run",
+    "Python.mit6_100l_f22_lec16_code.executor": "Run",
+    "Python.mit6_100l_f22_lec17_code.executor": "Run",
+    "Python.mit6_100l_f22_lec18_code.executor": "Run",
+    "Python.mit6_100l_f22_lec19_code.executor": "Run",
+    "Python.mit6_100l_f22_lec21_code.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/smcrony/PycharmProjects/MIT6.0001/PS/PS3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PS/PS3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LectureCode/21" />
       <recent name="$PROJECT_DIR$/LectureCode/20" />
       <recent name="$PROJECT_DIR$/LectureCode/19" />
       <recent name="$PROJECT_DIR$/PS/PS3" />
       <recent name="$PROJECT_DIR$/LectureCode/18" />
-      <recent name="$PROJECT_DIR$/LectureCode/17" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,7 +187,8 @@
       <workItem from="1735626399220" duration="35476000" />
       <workItem from="1736123777943" duration="29933000" />
       <workItem from="1736400331098" duration="1000" />
-      <workItem from="1736400342065" duration="5373000" />
+      <workItem from="1736400342065" duration="5990000" />
+      <workItem from="1736482889518" duration="6027000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -317,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736396296981</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Lecture 20 Done.">
+      <option name="closed" value="true" />
+      <created>1736405737993</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736405737993</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +345,8 @@
     <MESSAGE value="챕터17 Done" />
     <MESSAGE value="PS 3 Done." />
     <MESSAGE value="Lecture 19 Done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lecture 19 Done." />
+    <MESSAGE value="Lecture 20 Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lecture 20 Done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -381,6 +391,21 @@
           <line>389</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/20/lec20.py</url>
+          <line>268</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/20/lec20.py</url>
+          <line>267</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/21/mit6_100l_f22_lec21_code.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -393,10 +418,11 @@
     <SUITE FILE_PATH="coverage/MIT6_0001$lec20_helpers.coverage" NAME="lec20_helpers Coverage Results" MODIFIED="1736400317471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec14_code.coverage" NAME="mit6_100l_f22_lec14_code Coverage Results" MODIFIED="1735794205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/14" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec15_code.coverage" NAME="mit6_100l_f22_lec15_code Coverage Results" MODIFIED="1735868912171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/15" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1736400345111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1736559850479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec21_code.coverage" NAME="mit6_100l_f22_lec21_code Coverage Results" MODIFIED="1736565745972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/21" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec16_code.coverage" NAME="mit6_100l_f22_lec16_code Coverage Results" MODIFIED="1735873844717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/16" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec19_code.coverage" NAME="mit6_100l_f22_lec19_code Coverage Results" MODIFIED="1736398446295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/19" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec18_code.coverage" NAME="mit6_100l_f22_lec18_code Coverage Results" MODIFIED="1736127686799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/18" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$lec20.coverage" NAME="lec20 Coverage Results" MODIFIED="1736405610353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$lec20.coverage" NAME="lec20 Coverage Results" MODIFIED="1736561122705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
   </component>
 </project>

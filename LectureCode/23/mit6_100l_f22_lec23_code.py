@@ -5,6 +5,22 @@ import time
 ## CONSTANT Theta(1)
 ## ----------------------------------
 
+def f(L,L1,L2):
+    inL1 = False
+    for i in range(len(L1)):
+        if L[i] == L1[i]:
+            inL1 = True
+    inL2 = False
+    for i in range(len(L2)):
+        if L[i] == L2[i]:
+            inL2 = True
+    return inL1 and inL2
+
+L = [2,3,4]
+L1 = [2,3,5]
+L2 = [5,7,4]
+print(f(L,L1,L2))
+
 ## Theta(1)
 def add(x, y):
     return x+y

@@ -121,44 +121,105 @@ def binary_search(L, x):
     Performs a binary search on a sorted list L to find the index of x.
     If x is not found, returns -1.
     """
-    low = 0  # The lowest possible index to check
-    high = len(L) - 1  # The highest possible index to check
+    #Base Condition.
+    if L == [] :
+        return len(L)
+    else :
+        mid = (len(L)-1)//2
+        if L[mid] == x :
+            return mid
+        elif L[mid] < x:
+            return mid + 1 + binary_search(L[mid+1:], x)
+        else :
+            return binary_search(L[:mid], x)
 
-    while low <= high:
-        mid = (low + high) // 2  # Middle index between low and high
+
+def rbinary_search(L, low, high, x):
+    if low > high :
+        return len(L)
+    else :
+        mid = (low+high) // 2
         if L[mid] == x:
-            return mid  # x is found at index mid
-        elif L[mid]  < x:
-            low = mid + 1  # Narrow the search range to the upper half
-        else:
-            high = mid - 1  # Narrow the search range to the lower half
-
-    return -1  # x not found in the list
+            return mid
+        elif L[mid] < x:
+            return rbinary_search(L, mid+1, high, x)
+        else :
+            return rbinary_search(L, low, mid-1, x)
 
 
 print(is_in(L, 29))
+try:
+    print(binary_search(L, 29))
+except IndexError:
+    print("Index out of range")
 
-class KeyValue:
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
 
-    def __eq__(self, other):
-        # == 비교 시 key와 other(우리가 찾는 x 값)를 비교
-        return self.key == other
+def is_subset(L1, L2):
+    dL2 = {e:i for i, e in enumerate(L2)}
+    for i in L1:
+        if i not in dL2:
+            return False
+    return True
 
-    def __lt__(self, other):
-        # <  비교 시 key와 other를 비교
-        return self.key < other
+def gen_subsets(L):
+    #Base Condition.
+    if L == []:
+        return [L]
+    else:
+        L1 = gen_subsets(L[:-1])
+        last = L[-1]
+        #L2 = [e + [last] for e in L1]
+        L2 = []
+        for e in L1:
+            L2.append(e+[last])
+        return L1 + L2
 
-    def __gt__(self, other):
-        # >  비교 시 key와 other를 비교
-        return self.key > other
+def SelectionSort(L, start):
+    def swap(L, i, j):
+        # 리스트 L에서 인덱스 i, j의 원소를 교환
+        L[i], L[j] = L[j], L[i]
 
-l = [KeyValue(v, i) for i, v in enumerate(L)]
-l.sort()
-#print(binary_search(L, 29))  # may not work
-print(l[binary_search(l, 29)].value) # always work since the list is already sorted
+    def min(L, start):
+        j = start
+        for i in range(start + 1, len(L)):
+            if L[i] < L[j]:
+                j = i
+        return j
+
+    if len(L) - start <= 1:
+        return None
+
+    else:
+        j = min(L, start)
+        swap(L, j, start)
+        return SelectionSort(L, start + 1)
+
+L = [5,4,3]
+SelectionSort(L, 0)
+print(L)
+
+
+# class KeyValue:
+#     def __init__(self, key, value):
+#         self.key = key
+#         self.value = value
+#
+#     def __eq__(self, other):
+#         # == 비교 시 key와 other(우리가 찾는 x 값)를 비교
+#         return self.key == other
+#
+#     def __lt__(self, other):
+#         # <  비교 시 key와 other를 비교
+#         return self.key < other
+#
+#     def __gt__(self, other):
+#         # >  비교 시 key와 other를 비교
+#         return self.key > other
+#
+# l = [KeyValue(v, i) for i, v in enumerate(L)]
+# l.sort()
+# #print(binary_search(L, 29))  # may not work
+# print(l[binary_search(l, 29)].value) # always work since the list is already sorted
 
 L_N = [1]
 for i in range(8):

@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Lecture 22 Done.">
-      <change afterPath="$PROJECT_DIR$/LectureCode/24/mit6_100l_f22_lec24_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/pads.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/ps4a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/ps4b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/ps4c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/story.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/test_ps4a_student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/test_ps4bc_student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PS/PS4/words.txt" afterDir="false" />
+    <list default="true" id="0fe05e46-78e7-4f0b-9608-33a1a56da099" name="Changes" comment="Lecture 24 Done.">
+      <change afterPath="$PROJECT_DIR$/Exercise/ex1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/ex2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/hw3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/25/lec25.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/25/lec25_USPopulation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/25/lec25_countryPops.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/25/lec25_temperatures.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/26/exercise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/26/mit6_100l_f22_lec26_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LectureCode/26/oop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/22/mit6_100l_f22_lec22_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/22/mit6_100l_f22_lec22_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureCode/23/mit6_100l_f22_lec23_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/23/mit6_100l_f22_lec23_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureCode/24/mit6_100l_f22_lec24_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/LectureCode/24/mit6_100l_f22_lec24_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS/PS4/ps4b.py" beforeDir="false" afterPath="$PROJECT_DIR$/PS/PS4/ps4b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,8 @@
     "Python tests.Python tests in test_ps4bc_student.py.executor": "Debug",
     "Python.Test.executor": "Run",
     "Python.document_distance.executor": "Debug",
+    "Python.ex2.executor": "Run",
+    "Python.exercise.executor": "Run",
     "Python.hangman.executor": "Run",
     "Python.lec20.executor": "Run",
     "Python.lec20_helpers.executor": "Run",
@@ -79,6 +81,8 @@
     "Python.mit6_100l_f22_lec22_code.executor": "Run",
     "Python.mit6_100l_f22_lec23_code.executor": "Run",
     "Python.mit6_100l_f22_lec24_code.executor": "Run",
+    "Python.mit6_100l_f22_lec26_code.executor": "Run",
+    "Python.oop.executor": "Run",
     "Python.ps4a.executor": "Run",
     "Python.ps4b.executor": "Run",
     "Python.tree.executor": "Debug",
@@ -91,7 +95,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,11 +104,11 @@
       <recent name="$PROJECT_DIR$/PS/PS3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LectureCode/26" />
+      <recent name="$PROJECT_DIR$/LectureCode/25" />
       <recent name="$PROJECT_DIR$/PS/PS4" />
       <recent name="$PROJECT_DIR$/LectureCode/24" />
       <recent name="$PROJECT_DIR$/LectureCode/23" />
-      <recent name="$PROJECT_DIR$/LectureCode/22" />
-      <recent name="$PROJECT_DIR$/LectureCode/21" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,7 +212,9 @@
       <workItem from="1736400342065" duration="5990000" />
       <workItem from="1736482889518" duration="12925000" />
       <workItem from="1736660869417" duration="6168000" />
-      <workItem from="1736684164279" duration="36209000" />
+      <workItem from="1736684164279" duration="59942000" />
+      <workItem from="1737437927459" duration="2531000" />
+      <workItem from="1737443523863" duration="28511000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -362,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736660886418</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Lecture 24 Done.">
+      <option name="closed" value="true" />
+      <created>1737340965442</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737340965442</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +398,8 @@
     <MESSAGE value="Lecture 20 Done." />
     <MESSAGE value="Lecture 21 Done." />
     <MESSAGE value="Lecture 22 Done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lecture 22 Done." />
+    <MESSAGE value="Lecture 24 Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lecture 24 Done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -475,37 +490,62 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <condition expression="start == 10 and end == 11" language="Python" />
           <url>file://$PROJECT_DIR$/LectureCode/24/mit6_100l_f22_lec24_code.py</url>
-          <line>102</line>
+          <line>104</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/LectureCode/24/mit6_100l_f22_lec24_code.py</url>
-          <line>110</line>
+          <line>112</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/26/exercise.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="key==39" language="Python" />
+          <url>file://$PROJECT_DIR$/LectureCode/26/exercise.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LectureCode/26/oop.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self._HashTable__buckets[39]" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec26_code.coverage" NAME="mit6_100l_f22_lec26_code Coverage Results" MODIFIED="1737354237073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/26" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec13_code.coverage" NAME="mit6_100l_f22_lec13_code Coverage Results" MODIFIED="1735788090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/13" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$lec20_helpers.coverage" NAME="lec20_helpers Coverage Results" MODIFIED="1736400317471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1737443105147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/26" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec15_code.coverage" NAME="mit6_100l_f22_lec15_code Coverage Results" MODIFIED="1735868912171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/15" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec21_code.coverage" NAME="mit6_100l_f22_lec21_code Coverage Results" MODIFIED="1736565745972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/21" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec19_code.coverage" NAME="mit6_100l_f22_lec19_code Coverage Results" MODIFIED="1736398446295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/19" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$ps4b.coverage" NAME="ps4b Coverage Results" MODIFIED="1737448683294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS4" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec23_code.coverage" NAME="mit6_100l_f22_lec23_code Coverage Results" MODIFIED="1736677658649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/23" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$lec20.coverage" NAME="lec20 Coverage Results" MODIFIED="1736561122705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
     <SUITE FILE_PATH="coverage/MIT6_0001$tree.coverage" NAME="tree Coverage Results" MODIFIED="1736742837690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS4" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec17_code.coverage" NAME="mit6_100l_f22_lec17_code Coverage Results" MODIFIED="1735961645625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/17" />
     <SUITE FILE_PATH="coverage/MIT6_0001$.coverage" NAME=" Coverage Results" MODIFIED="1736940266455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS4" />
     <SUITE FILE_PATH="coverage/MIT6_0001$Test.coverage" NAME="Test Coverage Results" MODIFIED="1736398836589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/19" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec13_code.coverage" NAME="mit6_100l_f22_lec13_code Coverage Results" MODIFIED="1735788090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/13" />
     <SUITE FILE_PATH="coverage/MIT6_0001$document_distance.coverage" NAME="document_distance Coverage Results" MODIFIED="1736223286953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS3" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$lec20_helpers.coverage" NAME="lec20_helpers Coverage Results" MODIFIED="1736400317471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$oop.coverage" NAME="oop Coverage Results" MODIFIED="1737523029147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/26" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$ex2.coverage" NAME="ex2 Coverage Results" MODIFIED="1737535254043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Exercise" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec22_code.coverage" NAME="mit6_100l_f22_lec22_code Coverage Results" MODIFIED="1736687972939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/22" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec14_code.coverage" NAME="mit6_100l_f22_lec14_code Coverage Results" MODIFIED="1735794205245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/14" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec15_code.coverage" NAME="mit6_100l_f22_lec15_code Coverage Results" MODIFIED="1735868912171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/15" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1736684225899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec21_code.coverage" NAME="mit6_100l_f22_lec21_code Coverage Results" MODIFIED="1736565745972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/21" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$hangman.coverage" NAME="hangman Coverage Results" MODIFIED="1737438534482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS2" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec16_code.coverage" NAME="mit6_100l_f22_lec16_code Coverage Results" MODIFIED="1735873844717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/16" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec19_code.coverage" NAME="mit6_100l_f22_lec19_code Coverage Results" MODIFIED="1736398446295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/19" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$ps4b.coverage" NAME="ps4b Coverage Results" MODIFIED="1736949381195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS4" />
     <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec18_code.coverage" NAME="mit6_100l_f22_lec18_code Coverage Results" MODIFIED="1736127686799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/18" />
     <SUITE FILE_PATH="coverage/MIT6_0001$ps4a.coverage" NAME="ps4a Coverage Results" MODIFIED="1736738243402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PS/PS4" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec23_code.coverage" NAME="mit6_100l_f22_lec23_code Coverage Results" MODIFIED="1736677658649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/23" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec24_code.coverage" NAME="mit6_100l_f22_lec24_code Coverage Results" MODIFIED="1737340629421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/24" />
-    <SUITE FILE_PATH="coverage/MIT6_0001$lec20.coverage" NAME="lec20 Coverage Results" MODIFIED="1736561122705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/20" />
+    <SUITE FILE_PATH="coverage/MIT6_0001$mit6_100l_f22_lec24_code.coverage" NAME="mit6_100l_f22_lec24_code Coverage Results" MODIFIED="1737342386847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LectureCode/24" />
   </component>
 </project>

@@ -1,5 +1,7 @@
 import random
 import time
+import matplotlib.pyplot as plt
+
 
 
 ############################
@@ -128,6 +130,10 @@ A = [2,3,4,5,6,1]
 selection_sort(A)
 print(A)
 B = [random.randint(-100, 100) for _ in range(20)]
+
+plt.hist(B)
+plt.show()
+
 # insertion_sort(B)
 # print(B)
 merge_sort(B, 0, len(B)-1)

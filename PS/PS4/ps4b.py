@@ -17,8 +17,8 @@ class Message(object):
         '''
         self.text = input_text
 
-        # def __str__(self):
-        #     return f"Message: {self.text}"
+    def __str__(self):
+        return f"Message: {self.text}"
 
           # delete this line and replace with your code here
 
@@ -29,7 +29,7 @@ class Message(object):
 
         Returns: (string) A representation of the object
         '''
-
+        # return self.get_text()
         return f'''Message('{self.get_text()}')'''
 
     def get_text(self):
